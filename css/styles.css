@@ -1,7 +1,16 @@
 /* Phones up to 600px width */
+html {
+    background-color: #6B21A8;
+}
 /* Tablet */
 @media (min-width: 600px) {
+    html {
+        background-color: #6B21A8;
+    }
 }
   /* Desktop and laptop */
 @media (min-width: 992px) {
+    html {
+        background-color: #6B21A8;
+    }
 }
