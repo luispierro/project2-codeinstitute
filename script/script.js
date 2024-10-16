@@ -9,7 +9,7 @@ function playGame() {
         let randomNumber = Math.floor(Math.random() * 5);
         //display computer choice
         document.getElementById('computer').innerHTML = gameOption[randomNumber];
-        //check who wins
+        //check who wins and returns the result to the player
         if (selectedOption.value === 'rock') {
             if (gameOption[randomNumber] === 'scissor') document.getElementById('result').innerHTML = 'You crushed the computer\'s Scissor. YOU WIN!';
             else if (gameOption[randomNumber] === 'lizard') document.getElementById('result').innerHTML = 'You crushed the computer\'s Lizard. YOU WIN!';
@@ -41,9 +41,6 @@ function playGame() {
             else if (gameOption[randomNumber] === 'paper') document.getElementById('result').innerHTML = 'Your Spock was disproved by the computer\'s Paper. YOU LOOSE!';
             else document.getElementById('result').innerHTML = 'Your Spock was poised by the computer\'s Lizard. YOU LOOSE!';
         }
-
-
-
     } else {
       alert("No option selected");
     }
