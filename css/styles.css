@@ -1,16 +1,16 @@
 /* Phones up to 600px width */
 html {
-    background-color: rgba(111, 66, 193, 0.6); /*purple background with 60% opacity */
+    
 }
 /* Tablet */
 @media (min-width: 600px) {
     html {
-        background-color: rgba(111, 66, 193, 0.6); /*purple background with 60% opacity */
+        
     }
 }
   /* Desktop and laptop */
 @media (min-width: 992px) {
     html {
-        background-color: rgba(111, 66, 193, 0.6); /*purple background with 60% opacity */
+       
     }
 }

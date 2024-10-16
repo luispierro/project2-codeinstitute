@@ -1,0 +1,13 @@
+// custom.scss
+
+// Import Bootstrap functions and variables
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+
+// Now you can use the $purple-800 variable
+.custom-purple-bg {
+  background-color: $purple-800;
+}
+
+// Import the rest of Bootstrap's components (optional)
+@import "node_modules/bootstrap/scss/bootstrap";
