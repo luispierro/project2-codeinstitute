@@ -1,17 +1,54 @@
 //game control
 let game = 0;
 //game history
-let gameH
-console.log(game);  // Outputs: Temporary Value
+let gameH;
+//variable points to keep score in the match
+let points = 0;
+//points history
+let pointsH;
+function historyMatches(){
+    let history;
+    console.log(points);
+    if (points>0) {
+        history = parseInt(document.getElementById('win').innerHTML, 10);
+        history++;
+        console.log(history);
+        document.getElementById('win').innerHTML = history;
+    } else if (points<0) {
+        history = parseInt(document.getElementById('loose').innerHTML, 10);
+        history++;
+        console.log(history);
+        document.getElementById('loose').innerHTML = history;
+    } else {
+        history = parseInt(document.getElementById('tie').innerHTML, 10);
+        history++;
+        console.log(history);
+        document.getElementById('tie').innerHTML = history;
+    }
+
+}
 function winLoose(result) {
     //function to keep score
     let idGame = 'game'
+    // Get the value from sessionStorage
+    console.log(points + 'antes');
+    console.log(sessionStorage.getItem(pointsH) + ' session')
+    points = sessionStorage.getItem(pointsH);
     idGame = idGame+game;
-    console.log(game);
-    console.log(idGame);
-    if (result === 'win')  document.getElementById(idGame).innerHTML = 'WIN!';
-    else if (result === 'loose') document.getElementById(idGame).innerHTML = 'LOOSE!';
+    console.log(points + 'mais hist');
+    if (result === 'win')  {
+        document.getElementById(idGame).innerHTML = 'WIN!';
+        points ++;
+        console.log(points);
+    }
+    else if (result === 'loose') {
+        document.getElementById(idGame).innerHTML = 'LOOSE!';
+        points = points - 1;
+        console.log(points);
+    }
     else document.getElementById(idGame).innerHTML = 'TIE!';
+    // Set a value of points in sessionStorage
+    sessionStorage.setItem(pointsH, points.toString());
 }
 function playGame() {
     // Get the value from sessionStorage
@@ -22,9 +59,7 @@ function playGame() {
     let selectedOption = document.querySelector('input[name="choice"]:checked');
     
     if (selectedOption) {
-        console.log(game);
         game++; //adds 1 game
-        console.log(game);
         //get a number between 0 and 4
         let randomNumber = Math.floor(Math.random() * 5);
         //display computer choice
@@ -62,7 +97,13 @@ function playGame() {
             else {document.getElementById('result').innerHTML = 'Your Spock was poised by the computer\'s Lizard. YOU LOOSE!'; winLoose('loose');}
         }
         //if game 3 ends match
-        if(game>=3) game=0;
+        if(game>=3) {
+            historyMatches();
+            game=0;
+            points = 0;
+            //Reset value of points in sessionStorage
+            sessionStorage.setItem(pointsH, points);
+        }
         // Set a value of game in sessionStorage
         sessionStorage.setItem(gameH, game);
     } else {
