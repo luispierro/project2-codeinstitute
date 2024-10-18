@@ -53,7 +53,7 @@ function winLoose(result) {
 }
 function playGame() {
     // Get the value from sessionStorage
-    game = sessionStorage.getItem(gameH);
+    game = sessionStorage.getItem('gameH');
     // Possible options for the machine to choose
     let gameOption = [ 'rock', 'paper', 'scissor', 'lizard', 'spock']
     // Select the checked radio button with name="choice"
@@ -107,7 +107,7 @@ function playGame() {
             console.log(sessionStorage.getItem('pointsH') + ' fim dos 3 jogos')
         }
         // Set a value of game in sessionStorage
-        sessionStorage.setItem(gameH, game);
+        sessionStorage.setItem('gameH', game);
     } else {
       alert("No option selected");
     }
