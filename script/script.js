@@ -10,17 +10,17 @@ function historyMatches(){
     let history;
     console.log(points);
     if (points>0) {
-        history = parseInt(document.getElementById('win').innerHTML, 10);
+        history = Number(document.getElementById('win').innerHTML);
         history++;
         console.log(history);
         document.getElementById('win').innerHTML = history;
     } else if (points<0) {
-        history = parseInt(document.getElementById('loose').innerHTML, 10);
+        history = Number(document.getElementById('loose').innerHTML);
         history++;
         console.log(history);
         document.getElementById('loose').innerHTML = history;
     } else {
-        history = parseInt(document.getElementById('tie').innerHTML, 10);
+        history = Number(document.getElementById('tie').innerHTML);
         history++;
         console.log(history);
         document.getElementById('tie').innerHTML = history;
@@ -32,8 +32,8 @@ function winLoose(result) {
     let idGame = 'game'
     // Get the value from sessionStorage
     console.log(points + 'antes');
-    console.log(sessionStorage.getItem(pointsH) + ' session')
-    points = sessionStorage.getItem(pointsH);
+    console.log(sessionStorage.getItem('pointsH') + ' session')
+    points = Number(sessionStorage.getItem('pointsH'));
     idGame = idGame+game;
     console.log(points + 'mais hist');
     if (result === 'win')  {
@@ -43,12 +43,13 @@ function winLoose(result) {
     }
     else if (result === 'loose') {
         document.getElementById(idGame).innerHTML = 'LOOSE!';
-        points = points - 1;
+        points --;
         console.log(points);
     }
     else document.getElementById(idGame).innerHTML = 'TIE!';
     // Set a value of points in sessionStorage
-    sessionStorage.setItem(pointsH, points.toString());
+    sessionStorage.setItem('pointsH', points);
+    console.log(sessionStorage.getItem('pointsH') + ' depois de colocar na sessão')
 }
 function playGame() {
     // Get the value from sessionStorage
@@ -99,10 +100,11 @@ function playGame() {
         //if game 3 ends match
         if(game>=3) {
             historyMatches();
-            game=0;
+            game = 0;
             points = 0;
             //Reset value of points in sessionStorage
-            sessionStorage.setItem(pointsH, points);
+            sessionStorage.setItem('pointsH', points);
+            console.log(sessionStorage.getItem('pointsH') + ' fim dos 3 jogos')
         }
         // Set a value of game in sessionStorage
         sessionStorage.setItem(gameH, game);
