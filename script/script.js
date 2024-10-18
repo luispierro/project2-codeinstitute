@@ -165,3 +165,8 @@ function playGame() {
       alert("No option selected");
     }
   }
+
+  // Add click functionality using JavaScript
+  document.getElementById("rock-button").addEventListener("click", function() {
+    playGame();
+  });
