@@ -50,7 +50,7 @@ function winLoose(result) {
     // Set a value of points in sessionStorage
     sessionStorage.setItem('pointsH', points);
 }
-function playGame() {
+function playGame(option) {
     // Get the value from sessionStorage
     game = sessionStorage.getItem('gameH');
     // Possible options for the machine to choose
@@ -58,14 +58,14 @@ function playGame() {
     // Select the checked radio button with name="choice"
     let selectedOption = document.querySelector('input[name="choice"]:checked');
     
-    if (selectedOption) {
+    if (option) {
         game++; //adds 1 game
         //get a number between 0 and 4
         let randomNumber = Math.floor(Math.random() * 5);
         //display computer choice
         document.getElementById('computer').innerHTML = gameOption[randomNumber];
         //check who wins between the choice, keeps score and return to the user
-        if (selectedOption.value === 'rock') {
+        if (option === 'rock') {
             if (gameOption[randomNumber] === 'scissor') {
                 document.getElementById('result').innerHTML = 'You crushed the computer\'s Scissor. YOU WIN!'; 
                 winLoose('win');
@@ -82,7 +82,7 @@ function playGame() {
                 document.getElementById('result').innerHTML = 'Your Rock was vaporized by the computer\'s Spock. YOU LOOSE!'; 
                 winLoose('loose');
             }
-        } else if (selectedOption.value === 'paper') {
+        } else if (option === 'paper') {
             if (gameOption[randomNumber] === 'rock') {
                 document.getElementById('result').innerHTML = 'You covered the computer\'s Rock. YOU WIN!';
                 winLoose('win');
@@ -98,7 +98,7 @@ function playGame() {
             } else {document.getElementById('result').innerHTML = 'Your Paper was ate by the computer\'s Lizard. YOU LOOSE!'; 
                 winLoose('loose');
             }
-        } else if (selectedOption.value === 'scissor') {
+        } else if (option === 'scissor') {
             if (gameOption[randomNumber] === 'paper') {
                 document.getElementById('result').innerHTML = 'You cutted the computer\'s Paper. YOU WIN!'; 
                 winLoose('win');
@@ -114,7 +114,7 @@ function playGame() {
                 document.getElementById('result').innerHTML = 'Your Scissor was smashed by the computer\'s Spock. YOU LOOSE!'; 
                 winLoose('loose');
             }
-        } else if (selectedOption.value === 'lizard') {
+        } else if (option === 'lizard') {
             if (gameOption[randomNumber] === 'paper') {
                 document.getElementById('result').innerHTML = 'You ate the computer\'s Paper. YOU WIN!'; 
                 winLoose('win');
@@ -164,9 +164,15 @@ function playGame() {
     } else {
       alert("No option selected");
     }
-  }
+}
 
-  // Add click functionality using JavaScript
-  document.getElementById("rock-button").addEventListener("click", function() {
-    playGame();
-  });
+//Click listener for option rock
+document.getElementById("rock-button").addEventListener("click", function() {playGame('rock');});
+//Click listener for option paper
+document.getElementById("paper-button").addEventListener("click", function() {playGame('paper');});
+//Click listener for option scissor
+document.getElementById("scissor-button").addEventListener("click", function() {playGame('scissor');});
+//Click listener for option lizard
+document.getElementById("lizard-button").addEventListener("click", function() {playGame('lizard');});
+//Click listener for option spock
+document.getElementById("spock-button").addEventListener("click", function() {playGame('spock');});
