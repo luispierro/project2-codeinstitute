@@ -1,6 +1,7 @@
 /* Phones up to 600px width */
 .rock-button {
-  display: inline-block;
+  position: relative;
+  width: 30px; 
   padding: 2px 4px;
   transition: background-color 0.3s ease, transform 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -194,7 +195,9 @@
   /* Desktop and laptop */
 @media (min-width: 992px) {
     .rock-button {
-      display: inline-block;
+      position: relative;
+      width: 30px;
+      border-radius: 50%;
       cursor: pointer; 
       padding: 2px 4px;
       transition: background-color 0.3s ease, transform 0.3s ease;
@@ -213,7 +216,9 @@
       box-shadow: 2px #4A6646; /* Blue focus outline */
     }
     .paper-button {
-      display: inline-block;
+      position: relative;
+      width: 30px;
+      border-radius: 50%;
       cursor: pointer; 
       padding: 2px 4px;
       transition: background-color 0.3s ease, transform 0.3s ease;
@@ -232,7 +237,9 @@
       box-shadow: 2px #4A6646; /* Blue focus outline */
     }
     .scissor-button {
-      display: inline-block;
+      position: relative;
+      width: 30px;
+      border-radius: 50%;
       cursor: pointer; 
       padding: 2px 4px;
       transition: background-color 0.3s ease, transform 0.3s ease;
@@ -251,7 +258,9 @@
       box-shadow: 2px #4A6646; /* Blue focus outline */
     }
     .lizard-button {
-      display: inline-block;
+      position: relative;
+      width: 30px;
+      border-radius: 50%;
       cursor: pointer; 
       padding: 2px 4px;
       transition: background-color 0.3s ease, transform 0.3s ease;
@@ -270,7 +279,9 @@
       box-shadow: 2px #4A6646; /* Blue focus outline */
     }
     .spock-button {
-      display: inline-block;
+      position: relative;
+      width: 30px;
+      border-radius: 50%;
       cursor: pointer; 
       padding: 2px 4px;
       transition: background-color 0.3s ease, transform 0.3s ease;
