@@ -20,7 +20,7 @@
   box-shadow: 2px #4A6646; /* Blue focus outline */
 }
 .paper-button {
-  display: inline-block;
+  position: relative;
   border-radius: 50%;
   cursor: pointer; 
   padding: 2px 4px;
@@ -40,7 +40,7 @@
   box-shadow: 2px #4A6646; /* Blue focus outline */
 }
 .scissor-button {
-  display: inline-block;
+  position: relative;
   border-radius: 50%;
   cursor: pointer; 
   padding: 2px 4px;
@@ -60,7 +60,7 @@
   box-shadow: 2px #4A6646; /* Blue focus outline */
 }
 .lizard-button {
-  display: inline-block;
+  position: relative;
   border-radius: 50%;
   cursor: pointer; 
   padding: 2px 4px;
@@ -80,7 +80,7 @@
   box-shadow: 2px #4A6646; /* Blue focus outline */
 }
 .spock-button {
-  display: inline-block;
+  position: relative;
   border-radius: 50%;
   cursor: pointer; 
   padding: 2px 4px;
@@ -103,7 +103,7 @@
 /* Tablet */
 @media (min-width: 600px) {
     .rock-button {
-      display: inline-block;
+      position: relative;
       padding: 2px 4px;
       transition: background-color 0.3s ease, transform 0.3s ease;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -121,7 +121,7 @@
       box-shadow: 2px #4A6646; /* Blue focus outline */
     }
     .paper-button {
-      display: inline-block;
+      position: relative;
       cursor: pointer; 
       padding: 2px 4px;
       transition: background-color 0.3s ease, transform 0.3s ease;
@@ -140,7 +140,7 @@
       box-shadow: 2px #4A6646; /* Blue focus outline */
     }
     .scissor-button {
-      display: inline-block;
+      position: relative;
       cursor: pointer; 
       padding: 2px 4px;
       transition: background-color 0.3s ease, transform 0.3s ease;
@@ -159,7 +159,7 @@
       box-shadow: 2px #4A6646; /* Blue focus outline */
     }
     .lizard-button {
-      display: inline-block;
+      position: relative;
       cursor: pointer; 
       padding: 2px 4px;
       transition: background-color 0.3s ease, transform 0.3s ease;
@@ -178,7 +178,7 @@
       box-shadow: 2px #4A6646; /* Blue focus outline */
     }
     .spock-button {
-      display: inline-block;
+      position: relative;
       cursor: pointer; 
       padding: 2px 4px;
       transition: background-color 0.3s ease, transform 0.3s ease;
@@ -201,7 +201,6 @@
 @media (min-width: 992px) {
     .rock-button {
       position: relative;
-      width: 30px;
       border-radius: 50%;
       cursor: pointer; 
       padding: 2px 4px;
@@ -222,7 +221,6 @@
     }
     .paper-button {
       position: relative;
-      width: 30px;
       border-radius: 50%;
       cursor: pointer; 
       padding: 2px 4px;
@@ -243,7 +241,6 @@
     }
     .scissor-button {
       position: relative;
-      width: 30px;
       border-radius: 50%;
       cursor: pointer; 
       padding: 2px 4px;
@@ -264,7 +261,6 @@
     }
     .lizard-button {
       position: relative;
-      width: 30px;
       border-radius: 50%;
       cursor: pointer; 
       padding: 2px 4px;
@@ -285,7 +281,6 @@
     }
     .spock-button {
       position: relative;
-      width: 30px;
       border-radius: 50%;
       cursor: pointer; 
       padding: 2px 4px;
