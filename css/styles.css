@@ -1,6 +1,7 @@
 /* Phones up to 600px width */
 .rock-button {
   position: relative;
+  border-radius: 50%;
   width: 30px; 
   padding: 2px 4px;
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -20,6 +21,7 @@
 }
 .paper-button {
   display: inline-block;
+  border-radius: 50%;
   cursor: pointer; 
   padding: 2px 4px;
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -39,6 +41,7 @@
 }
 .scissor-button {
   display: inline-block;
+  border-radius: 50%;
   cursor: pointer; 
   padding: 2px 4px;
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -58,6 +61,7 @@
 }
 .lizard-button {
   display: inline-block;
+  border-radius: 50%;
   cursor: pointer; 
   padding: 2px 4px;
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -77,6 +81,7 @@
 }
 .spock-button {
   display: inline-block;
+  border-radius: 50%;
   cursor: pointer; 
   padding: 2px 4px;
   transition: background-color 0.3s ease, transform 0.3s ease;
