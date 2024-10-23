@@ -237,6 +237,23 @@ footer p{
       outline: none;
       box-shadow: 2px #4A6646; /* Blue focus outline */
     }
+    footer{
+      background-color: #4e4e4e;
+      position: fixed;
+      padding: 10px 0px;
+      text-align: center;
+      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      font-size: clamp(1rem, 1vw, 3rem);
+      width: 100%;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+    footer p{ 
+      display: inline;
+      font-size: clamp(0.5rem, 2vw, 6rem);
+    }
 }
   /* Desktop and laptop */
 @media (min-width: 992px) {
@@ -339,5 +356,22 @@ footer p{
     .spock-button:focus {
       outline: none;
       box-shadow: 2px #4A6646; /* Blue focus outline */
+    }
+    footer{
+      background-color: #4e4e4e;
+      position: fixed;
+      padding: 10px 0px;
+      text-align: center;
+      color: #fff;
+      font-family: 'Open Sans', sans-serif;
+      font-size: clamp(1rem, 1vw, 3rem);
+      width: 100%;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+    footer p{ 
+      display: inline;
+      font-size: 16px;
     }
 }
