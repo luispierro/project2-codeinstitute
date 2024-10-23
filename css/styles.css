@@ -1,4 +1,25 @@
 /* Phones up to 600px width */
+.history-title{
+  text-align: center;
+}
+.your-wins{
+  /*design for boxes of history win games */
+  background-color: #556B2F;
+  border-radius: 10%;
+  text-align: center;
+}
+.your-loss{
+  /*design for boxes of history loss games */
+  background-color: #a0312d;
+  border-radius: 10%;
+  text-align: center;
+}
+.game-ties{
+  /*design for boxes of history tie games */
+  background-color: #727272;
+  border-radius: 10%;
+  text-align: center;
+}
 .rock-button {
   position: relative;
   border-radius: 50%;
@@ -102,6 +123,9 @@
 
 /* Tablet */
 @media (min-width: 600px) {
+    .history-title{
+      text-align: center;
+    }
     .rock-button {
       position: relative;
       padding: 2px 4px;

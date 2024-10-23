@@ -15,19 +15,7 @@
     <body class="custom-purple-bg">
         <div class="container text-white">
             <div class="row">
-                <div class="col-2">
-                    <div class="row"><h2>Recent Score</h2></div>
-                    <div class="row">
-                        <div class="col" id="game1">
-                        </div>
-                        <div class="col" id="game2">
-                        </div>
-                        <div class="col" id="game3">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-6">
-                    <div class="row pt-5"></div>
+                <div class="col-12 col-md-4 col-lg-8">
                     <div class="row pt-5"></div>
                     <div class="row pt-5"></div>
                     <div class="row justify-content-center pt-5">
@@ -54,22 +42,33 @@
                     <div class="row">
                         <h1 id="result"></h1>
                     </div>
-                </div>
-                <div class="col-2">
-                    <div class="row"><h2>History Results</h2></div>
                     <div class="row">
-                        <h3>Your wins:</h3>
-                        <p id="win"></p>
-                    </div>
-                    <div class="row">
-                        <h3>Computer wins:</h3>
-                        <p id="loose"></p>
-                    </div>
-                    <div class="row">
-                        <h3>Ties:</h3>
-                        <p id="tie"></p>
+                        <div class="col-2" id="game1">
+                        </div>
+                        <div class="col-2" id="game2">
+                        </div>
+                        <div class="col-2" id="game3">
+                        </div>
                     </div>
                 </div>
+                <div class="col-12 col-md-4 col-lg-8">
+                    <div class="row"><div class="col-12 col-md-4 col-lg-8 justify-content-center align-items-center p-3 history-title"><h2>History Results</h2></div></div>
+                    <div class="row">
+                        <div class="col-4 col-md-4 col-lg-2 your-wins">
+                            <h4>Wins</h4>
+                            <p id="win"></p>
+                        </div>
+                        
+                        <div class="col-4 col-md-4 col-lg-2 your-loss">
+                            <h4>Losses</h4>
+                            <p id="loose"></p>
+                        </div>
+                        
+                        <div class="col-4 col-md-4 col-lg-2 game-ties">
+                            <h4>Ties</h4>
+                            <p id="tie"></p>
+                        </div>
+                    </div>
               </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
