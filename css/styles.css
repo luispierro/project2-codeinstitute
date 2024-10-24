@@ -164,17 +164,6 @@ footer p{
 #result{
   text-align: center;
 }
- /* Dim the background */
- #page-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
-  display: none; /* Hidden by default */
-  z-index: 999; /* Just below the message box */
-}
 /* Message box styling */
 #overlay-message {
   position: fixed; /* Sticks to a specific position relative to the viewport */
