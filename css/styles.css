@@ -180,9 +180,29 @@ footer p{
   width: 300px;
 }
 button {
-  padding: 10px 20px;
-  font-size: 16px;
-}
+  padding: 12px 25px;
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+      background: linear-gradient(45deg, #6a5acd, #8a2be2);
+      border: none;
+      border-radius: 30px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+    /* Button hover effect */
+    button:hover {
+      background: linear-gradient(45deg, #8a2be2, #6a5acd); /* Reverse gradient on hover */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+      transform: translateY(-3px); /* Slight lift effect */
+    }
+    /* Button active effect (when clicked) */
+    button:active {
+      transform: translateY(1px); /* Slight push down */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly reduce shadow */
+    }
 /* Tablet */
 @media (min-width: 600px) {
     .history-title{
