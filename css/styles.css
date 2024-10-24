@@ -138,6 +138,9 @@ footer p{
   display: inline;
   font-size: 10px;
 }
+.container{
+  padding-bottom: 5rem; /* Space available between last element and footer */
+}
 /* Tablet */
 @media (min-width: 600px) {
     .history-title{
@@ -253,6 +256,9 @@ footer p{
     footer p{ 
       display: inline;
       font-size: clamp(0.5rem, 2vw, 6rem);
+    }
+    .container{
+      padding-bottom: 5rem; /* Space available between last element and footer */
     }
 }
   /* Desktop and laptop */
@@ -373,5 +379,8 @@ footer p{
     footer p{ 
       display: inline;
       font-size: 16px;
+    }
+    .container{
+      padding-bottom: 5rem; /* Space available between last element and footer */
     }
 }
