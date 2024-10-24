@@ -31,7 +31,7 @@ function historyMatches(){
 function winLoose(result) {
     //function to keep score
     let idGame = 'game'
-    // Get the value from sessionStorage
+    // Get the value from sessionStorage to know wich game it is
     points = Number(sessionStorage.getItem('pointsH'));
     idGame = idGame+game;
     if (result === 'win')  {
@@ -74,86 +74,87 @@ function playGame(option) {
         //check who wins between the choice, keeps score and return to the user
         if (option === 'rock') {
             if (gameOption[randomNumber] === 'scissor') {
-                document.getElementById('result').innerHTML = 'You crushed the computer\'s Scissor. YOU WIN!'; 
+                document.getElementById('result').innerHTML = '<h5>You crushed the computer\'s Scissor.<br>YOU WIN!</h5>'; 
                 winLoose('win');
             } else if (
-                gameOption[randomNumber] === 'lizard') {document.getElementById('result').innerHTML = 'You crushed the computer\'s Lizard. YOU WIN!';
+                gameOption[randomNumber] === 'lizard') {document.getElementById('result').innerHTML = '<h5>You crushed the computer\'s Lizard.<br>YOU WIN!</h5>';
                 winLoose('win');
             } else if (gameOption[randomNumber] === 'rock') {
-                document.getElementById('result').innerHTML = 'It\'s a tie'; 
+                document.getElementById('result').innerHTML = '<h5>It\'s a Tie</h5>'; 
                 winLoose('tie');
             } else if (gameOption[randomNumber] === 'paper') {
-                document.getElementById('result').innerHTML = 'Your Rock was covered by the computer\'s Paper. YOU LOOSE!'; 
+                document.getElementById('result').innerHTML = '<h5>Your Rock was covered by the computer\'s Paper.<br>YOU LOOSE!</h5>'; 
                 winLoose('loose');
             } else {
-                document.getElementById('result').innerHTML = 'Your Rock was vaporized by the computer\'s Spock. YOU LOOSE!'; 
+                document.getElementById('result').innerHTML = '<h5>Your Rock was vaporized by the computer\'s Spock.<br>YOU LOOSE!</h5>'; 
                 winLoose('loose');
             }
         } else if (option === 'paper') {
             if (gameOption[randomNumber] === 'rock') {
-                document.getElementById('result').innerHTML = 'You covered the computer\'s Rock. YOU WIN!';
+                document.getElementById('result').innerHTML = '<h5>You covered the computer\'s Rock.<br>YOU WIN!</h5>';
                 winLoose('win');
             } else if (gameOption[randomNumber] === 'spock') {
-                document.getElementById('result').innerHTML = 'You disproved the computer\'s Spock. YOU WIN!'; 
+                document.getElementById('result').innerHTML = '<h5>You disproved the computer\'s Spock.<br>YOU WIN!</h5>'; 
                 winLoose('win');
             } else if (gameOption[randomNumber] === 'paper') {
-                document.getElementById('result').innerHTML = 'It\'s a tie'; 
+                document.getElementById('result').innerHTML = '<h5>It\'s a Tie</h5>'; 
                 winLoose('tie');
             } else if (gameOption[randomNumber] === 'scissor') {
-                document.getElementById('result').innerHTML = 'Your Paper was cutted by the computer\'s Scissor. YOU LOOSE!'; 
+                document.getElementById('result').innerHTML = '<h5>Your Paper was cutted by the computer\'s Scissor.<br>YOU LOOSE!</h5>'; 
                 winLoose('loose');
-            } else {document.getElementById('result').innerHTML = 'Your Paper was ate by the computer\'s Lizard. YOU LOOSE!'; 
+            } else {document.getElementById('result').innerHTML = '<h5>Your Paper was ate by the computer\'s Lizard.<br>YOU LOOSE!</h5>'; 
                 winLoose('loose');
             }
         } else if (option === 'scissor') {
             if (gameOption[randomNumber] === 'paper') {
-                document.getElementById('result').innerHTML = 'You cutted the computer\'s Paper. YOU WIN!'; 
+                document.getElementById('result').innerHTML = '<h5>You cutted the computer\'s Paper.<br>YOU WIN!</h5>'; 
                 winLoose('win');
             } else if (gameOption[randomNumber] === 'Lizard') {
-                document.getElementById('result').innerHTML = 'You decapitated the computer\'s Lizard. YOU WIN!'; 
+                document.getElementById('result').innerHTML = '<h5>You decapitated the computer\'s Lizard.<br>YOU WIN!</h5>'; 
                 winLoose('win');
-            } else if (gameOption[randomNumber] === 'scissor') {document.getElementById('result').innerHTML = 'It\'s a tie'; 
+            } else if (gameOption[randomNumber] === 'scissor') {
+                document.getElementById('result').innerHTML = '<h5>It\'s a Tie</h5>'; 
                 winLoose('tie');
             } else if (gameOption[randomNumber] === 'rock') {
-                document.getElementById('result').innerHTML = 'Your Scissor was crushed by the computer\'s Rock. YOU LOOSE!'; 
+                document.getElementById('result').innerHTML = '<h5>Your Scissor was crushed by the computer\'s Rock.<br>YOU LOOSE!</h5>'; 
                 winLoose('loose');
             } else {
-                document.getElementById('result').innerHTML = 'Your Scissor was smashed by the computer\'s Spock. YOU LOOSE!'; 
+                document.getElementById('result').innerHTML = '<h5>Your Scissor was smashed by the computer\'s Spock.<br>YOU LOOSE!</h5>'; 
                 winLoose('loose');
             }
         } else if (option === 'lizard') {
             if (gameOption[randomNumber] === 'paper') {
-                document.getElementById('result').innerHTML = 'You ate the computer\'s Paper. YOU WIN!'; 
+                document.getElementById('result').innerHTML = '<h5>You ate the computer\'s Paper.<br>YOU WIN!</h5>'; 
                 winLoose('win');
             }
             else if (gameOption[randomNumber] === 'spock') {
-                document.getElementById('result').innerHTML = 'You poised the computer\'s Spock. YOU WIN!'; 
+                document.getElementById('result').innerHTML = '<h5>You poised the computer\'s Spock.<br>YOU WIN!</h5>'; 
                 winLoose('win');
             } else if (gameOption[randomNumber] === 'lizard') {
-                document.getElementById('result').innerHTML = 'It\'s a tie'; 
+                document.getElementById('result').innerHTML = '<h5>It\'s a Tie</h5>'; 
                 winLoose('tie');
             } else if (gameOption[randomNumber] === 'rock') {
-                document.getElementById('result').innerHTML = 'Your Lizard was crushed by the computer\'s Rock. YOU LOOSE!'; 
+                document.getElementById('result').innerHTML = '<h5>Your Lizard was crushed by the computer\'s Rock.<br>YOU LOOSE!</h5>'; 
                 winLoose('loose');
             } else {
-                document.getElementById('result').innerHTML = 'Your Lizard was decapitated by the computer\'s Scissor. YOU LOOSE!'; 
+                document.getElementById('result').innerHTML = '<h5>Your Lizard was decapitated by the computer\'s Scissor.<br>YOU LOOSE!</h5>'; 
                 winLoose('loose');
             }
         } else {
             if (gameOption[randomNumber] === 'rock') {
-                document.getElementById('result').innerHTML = 'You vaporized the computer\'s Rock. YOU WIN!'; 
+                document.getElementById('result').innerHTML = '<h5>You vaporized the computer\'s Rock.<br>YOU WIN!</h5>'; 
                 winLoose('win');
             } else if (gameOption[randomNumber] === 'scissor') {
-                document.getElementById('result').innerHTML = 'You smashed the computer\'s Scissor. YOU WIN!'; 
+                document.getElementById('result').innerHTML = '<h5>You smashed the computer\'s Scissor.<br>YOU WIN!</h5>'; 
                 winLoose('win');
             } else if (gameOption[randomNumber] === 'spock') {
-                document.getElementById('result').innerHTML = 'It\'s a tie'; 
+                document.getElementById('result').innerHTML = '<h5>It\'s a Tie</h5>'; 
                 winLoose('tie');
             } else if (gameOption[randomNumber] === 'paper') {
-                document.getElementById('result').innerHTML = 'Your Spock was disproved by the computer\'s Paper. YOU LOOSE!'; 
+                document.getElementById('result').innerHTML = '<h5>Your Spock was disproved by the computer\'s Paper.<br>YOU LOOSE!</h5>'; 
                 winLoose('loose');
             } else {
-                document.getElementById('result').innerHTML = 'Your Spock was poised by the computer\'s Lizard. YOU LOOSE!'; 
+                document.getElementById('result').innerHTML = '<h5>Your Spock was poised by the computer\'s Lizard.<br>YOU LOOSE!</h5>'; 
                 winLoose('loose');
             }
         }

@@ -133,13 +133,36 @@ footer{
   right: 0;
   left: 0;
 }
-
 footer p{ 
   display: inline;
   font-size: 10px;
 }
 .container{
   padding-bottom: 5rem; /* Space available between last element and footer */
+}
+#game1 {
+  background-color: #4e4e4e;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  outline: 2px dashed black;
+}
+#game2 {
+  background-color: #4e4e4e;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  outline: 2px dashed black;
+}
+#game3 {
+  background-color: #4e4e4e;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  outline: 2px dashed black;
+}
+#result{
+  text-align: center;
 }
 /* Tablet */
 @media (min-width: 600px) {
