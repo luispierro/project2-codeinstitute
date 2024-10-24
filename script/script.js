@@ -50,6 +50,13 @@ function winLoose(result) {
     // Set a value of points in sessionStorage
     sessionStorage.setItem('pointsH', points);
 }
+function computerChoice(choice){
+    if (choice==='rock') document.getElementById('computer').innerHTML = '<img src=\"assets/rock/favicon.ico\" alt=\"icon of a rock\">';
+    else if (choice==='paper') document.getElementById('computer').innerHTML = '<img src=\"assets/paper/favicon.ico\" alt=\"icon of a paper\">';
+    else if (choice==='scissor') document.getElementById('computer').innerHTML = '<img src=\"assets/scissor/favicon.ico\" alt=\"icon of a scissor\">';
+    else if (choice==='lizard') document.getElementById('computer').innerHTML = '<img src=\"assets/lizard/favicon.ico\" alt=\"icon of a lizard\">';
+    else document.getElementById('computer').innerHTML = '<img src=\"assets/spock/favicon.ico\" alt=\"icon of the spock hand sign\">';
+}
 function playGame(option) {
     // Get the value from sessionStorage
     game = sessionStorage.getItem('gameH');
@@ -63,7 +70,7 @@ function playGame(option) {
         //get a number between 0 and 4
         let randomNumber = Math.floor(Math.random() * 5);
         //display computer choice
-        document.getElementById('computer').innerHTML = gameOption[randomNumber];
+        computerChoice(gameOption[randomNumber]);
         //check who wins between the choice, keeps score and return to the user
         if (option === 'rock') {
             if (gameOption[randomNumber] === 'scissor') {
@@ -157,7 +164,6 @@ function playGame(option) {
             points = 0;
             //Reset value of points in sessionStorage
             sessionStorage.setItem('pointsH', points);
-            console.log(sessionStorage.getItem('pointsH') + ' fim dos 3 jogos')
         }
         // Set a value of game in sessionStorage
         sessionStorage.setItem('gameH', game);
