@@ -15,18 +15,20 @@ function historyMatches(){
         history = Number(document.getElementById('win').innerHTML);
         history++;
         document.getElementById('win').innerHTML = history;
+        alert("Congratulations! You won the match!");
     } else if (points<0) {
         //if the matche ended with less than 0 points then the user have lost and gets the historic from the page and set the new value
         history = Number(document.getElementById('loose').innerHTML);
         history++;
         document.getElementById('loose').innerHTML = history;
+        alert("Better luck next Time! You lost the match!");
     } else {
         //if the matche ended with 0 points then its a tie and gets the historic from the page and set the new value
         history = Number(document.getElementById('tie').innerHTML);
         history++;
         document.getElementById('tie').innerHTML = history;
+        alert("Try again! The match result was a Tie!");
     }
-
 }
 function winLoose(result) {
     //function to keep score
@@ -49,6 +51,11 @@ function winLoose(result) {
     else document.getElementById(idGame).innerHTML = '<img src=\"assets/tie/favicon-32x32.png\" alt=\"small blue circle to represent a tie game\">';
     // Set a value of points in sessionStorage
     sessionStorage.setItem('pointsH', points);
+    // resets game results when it's first game
+    if (idGame==='game1') {
+        document.getElementById('game2').innerHTML = ' ';
+        document.getElementById('game3').innerHTML = ' ';
+    }
 }
 function computerChoice(choice){
     if (choice==='rock') document.getElementById('computer').innerHTML = '<img src=\"assets/rock/favicon.ico\" alt=\"icon of a rock\">';
