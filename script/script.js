@@ -36,17 +36,17 @@ function winLoose(result) {
     idGame = idGame+game;
     if (result === 'win')  {
         //if the user won the game adds 1 point and record as win
-        document.getElementById(idGame).innerHTML = 'WIN!';
+        document.getElementById(idGame).innerHTML = '<img src=\"assets/win/favicon-32x32.png\" alt=\"small green check mark to represent win\">';
         points ++;
         console.log(points);
     }
     else if (result === 'loose') {
         //if the user lost the game takes out 1 point and record as loose
-        document.getElementById(idGame).innerHTML = 'LOOSE!';
+        document.getElementById(idGame).innerHTML = '<img src=\"assets/loss/favicon-32x32.png\" alt=\"small red cross to represent loss\">';
         points --;
         console.log(points);
     } //if its a tie adds no point and record as tie
-    else document.getElementById(idGame).innerHTML = 'TIE!';
+    else document.getElementById(idGame).innerHTML = '<img src=\"assets/tie/favicon-32x32.png\" alt=\"small blue circle to represent a tie game\">';
     // Set a value of points in sessionStorage
     sessionStorage.setItem('pointsH', points);
 }
