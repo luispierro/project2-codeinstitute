@@ -164,6 +164,36 @@ footer p{
 #result{
   text-align: center;
 }
+ /* Dim the background */
+ #page-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+  display: none; /* Hidden by default */
+  z-index: 999; /* Just below the message box */
+}
+/* Message box styling */
+#overlay-message {
+  position: fixed; /* Sticks to a specific position relative to the viewport */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the message box */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: none; /* Hidden by default */
+  z-index: 1000; /* Ensures the message overlaps other content */
+  width: 300px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
 /* Tablet */
 @media (min-width: 600px) {
     .history-title{

@@ -6,6 +6,11 @@ let gameH;
 let points = 0;
 //points history
 let pointsH;
+function hideMessage() {
+    // Hide the message and overlay
+    document.getElementById('overlay-message').style.display = 'none';
+    document.getElementById('page-overlay').style.display = 'none';
+  }
 function historyMatches(){
     //function to store the historic results of matches
     let history;
@@ -15,19 +20,25 @@ function historyMatches(){
         history = Number(document.getElementById('win').innerHTML);
         history++;
         document.getElementById('win').innerHTML = history;
-        alert("Congratulations! You won the match!");
+        document.getElementById('overlay-message').style.display = 'block';
+        document.getElementById('page-overlay').style.display = 'block';
+        document.getElementById('overlay-message').innerHTML = "Congratulations! You won the match!<br><br><button onclick=\"hideMessage()\">Reset Game</button>";
     } else if (points<0) {
         //if the matche ended with less than 0 points then the user have lost and gets the historic from the page and set the new value
         history = Number(document.getElementById('loose').innerHTML);
         history++;
         document.getElementById('loose').innerHTML = history;
-        alert("Better luck next Time! You lost the match!");
+        document.getElementById('overlay-message').style.display = 'block';
+        document.getElementById('page-overlay').style.display = 'block';
+        document.getElementById('overlay-message').innerHTML = "Better luck next Time! You lost the match!<br><br><button onclick=\"hideMessage()\">Reset Game</button>";
     } else {
         //if the matche ended with 0 points then its a tie and gets the historic from the page and set the new value
         history = Number(document.getElementById('tie').innerHTML);
         history++;
         document.getElementById('tie').innerHTML = history;
-        alert("Try again! The match result was a Tie!");
+        document.getElementById('overlay-message').style.display = 'block';
+        document.getElementById('page-overlay').style.display = 'block';
+        document.getElementById('overlay-message').innerHTML = "Try again! The match result was a Tie!<br><br><button onclick=\"hideMessage()\">Reset Game</button>";
     }
 }
 function winLoose(result) {
