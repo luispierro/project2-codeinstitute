@@ -3,6 +3,15 @@
 
 Fun Games Today is a playful and quirky website where players dive into the ultimate showdown of Rock, Paper, Scissors, Lizard, Spock! This isn’t your average game of chance; each match is a best-of-three series, adding a strategic twist to the classic game. Points are earned by winning rounds (+1), lost for defeats (-1), and a tie leaves you just as you were. Rack up the most points across three rounds to claim victory, or risk watching your score slip away. With each click, Fun Games Today delivers fast, addictive fun for casual players and serious strategists alike!
 
+## Design
+
+### Wireframes
+
+<summary>Desktop</summary>
+<description>![desktop](assets/wireframe-desktop.jpg)</description>
+
+### Screens
+
 Our Website on Tablets
 ![home page-tablet](assets/game-tablet.png)
 
@@ -65,6 +74,11 @@ It was tested using the inspect feature of the chrome browser and my actual phon
 
 - Accessibility
   - No erros passing through the validator. Only alarms for device dependencies, especially for the hover events. [(Wave) validator](https://wave.webaim.org/report#/https://luispierro.github.io/project2-codeinstitute/)
+
+- Lighthouse
+  - Good score obtained while passing through lighthouse inspection on browser:
+
+  ![Lighthouse](assets/lighthouse.png)
 
 ### Unfixed Bugs
 
