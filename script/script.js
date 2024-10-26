@@ -9,6 +9,7 @@ let pointsH;
 function hideMessage() {
     // Hide the message and overlay
     document.getElementById('overlay-message').style.display = 'none';
+    document.getElementById('overlay-background').style.display = 'none';
   }
 function historyMatches(){
     //function to store the historic results of matches
@@ -19,6 +20,7 @@ function historyMatches(){
         history++;
         document.getElementById('win').innerHTML = history;
         document.getElementById('overlay-message').style.display = 'block';
+        document.getElementById('overlay-background').style.display = 'block'; //prevents interactions with the rest of the page
         document.getElementById('overlay-message').innerHTML = "Congratulations! You won the match!<br><br><button onclick=\"hideMessage()\">Play again</button>";
     } else if (points<0) {
         //if the matche ended with less than 0 points then the user have lost and gets the historic from the page and set the new value
@@ -26,6 +28,7 @@ function historyMatches(){
         history++;
         document.getElementById('loose').innerHTML = history;
         document.getElementById('overlay-message').style.display = 'block';
+        document.getElementById('overlay-background').style.display = 'block'; //prevents interactions with the rest of the page
         document.getElementById('overlay-message').innerHTML = "Better luck next Time! You lost the match!<br><br><button onclick=\"hideMessage()\">Play again</button>";
     } else {
         //if the matche ended with 0 points then its a tie and gets the historic from the page and set the new value
@@ -33,6 +36,7 @@ function historyMatches(){
         history++;
         document.getElementById('tie').innerHTML = history;
         document.getElementById('overlay-message').style.display = 'block';
+        document.getElementById('overlay-background').style.display = 'block'; //prevents interactions with the rest of the page
         document.getElementById('overlay-message').innerHTML = "Try again! The match result was a Tie!<br><br><button onclick=\"hideMessage()\">Play again</button>";
     }
 }
