@@ -18,11 +18,17 @@ Our Website on Desktops
 
 - Full responsive, the players can choose their play by a easy click/tap on the option. The display is responsive for all devices and has some cool design for a fun time.
 
+- __Game Help__
+
+- Modern overlay display the rules of the game. It has a simple and easy description for the better understanding of the game. The players can acess it at any time, without distourbing the game or having to leave the page.
+
+![game-help](assets/game-rules.png)
+
 __Cards Description__
 
 - The website explanes the 2 buttons on top, it also follows the mouse (ONLY AVAILABLE FOR DESKTOPS):
 
-![bubtton-description](assets/descritives%20of%20buttons.png)
+![button-description](assets/descritives%20of%20buttons.png)
 
 __Game and Match Result__
 
