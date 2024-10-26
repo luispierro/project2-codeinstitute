@@ -39,7 +39,7 @@
 }
 .choice-button:focus {
   outline: none;
-  box-shadow: 2px #B0C4DE;
+  box-shadow: 2px solid #B0C4DE;
 }
 footer{
   background-color: #4e4e4e;
@@ -175,7 +175,7 @@ button:active {
 }
 #about-button:focus {
   outline: none;
-  box-shadow: 2px #4A6646; /* Blue focus outline */
+  box-shadow: 2px solid #4A6646; /* focus outline */
 }
 #rules-button {
   background-color: #4e4e4e;
@@ -195,7 +195,7 @@ button:active {
 }
 #rules-button:focus {
   outline: none;
-  box-shadow: 2px #4A6646; /* Blue focus outline */
+  box-shadow: 2px solid #4A6646; /* focus outline */
 }
 ul, ol {
   padding: 3px !important; /* Removes default indentation */
@@ -255,7 +255,7 @@ ul, ol {
     }
     .choice-button:focus {
       outline: none;
-      box-shadow: 2px #B0C4DE;
+      box-shadow: 2px solid #B0C4DE;
     }
     footer{
       background-color: #4e4e4e;
@@ -391,7 +391,7 @@ ul, ol {
     }
     #about-button:focus {
       outline: none;
-      box-shadow: 2px #4A6646; /* Blue focus outline */
+      box-shadow: 2px solid #4A6646; /* focus outline */
     }
     #rules-button {
       background-color: #4e4e4e;
@@ -411,7 +411,7 @@ ul, ol {
     }
     #rules-button:focus {
       outline: none;
-      box-shadow: 2px #4A6646; /* Blue focus outline */
+      box-shadow: 2px solid #4A6646; /* focus outline */
     }
     ul, ol {
       padding: 3px !important; /* Removes default indentation */
@@ -475,7 +475,7 @@ ul, ol {
     }
     .choice-button:focus {
       outline: none;
-      box-shadow: 2px #B0C4DE;
+      box-shadow: 2px solid #B0C4DE;
     }
     footer{
       background-color: #4e4e4e;
@@ -627,7 +627,7 @@ ul, ol {
     }
     #about-button:focus {
       outline: none;
-      box-shadow: 2px #4A6646; /* Blue focus outline */
+      box-shadow: 2px solid #4A6646; /* Blue focus outline */
     }
     #rules-button {
       background-color: #4e4e4e;
@@ -647,7 +647,7 @@ ul, ol {
     }
     #rules-button:focus {
       outline: none;
-      box-shadow: 2px #4A6646; /* Blue focus outline */
+      box-shadow: 2px solid #4A6646; /* focus outline */
     }
     ul, ol {
       padding: 3px !important; /* Removes default indentation */
