@@ -164,6 +164,18 @@ footer p{
 #result{
   text-align: center;
 }
+#overlay-background {
+  position: fixed; /* Sticks to a specific position relative to the viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
 /* Overlapping end game message box style */
 #overlay-message {
   position: fixed; /* Sticks to a specific position relative to the viewport */

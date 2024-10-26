@@ -189,20 +189,24 @@ function playGame(option) {
 function aboutOpen(){
     // function to display the about us
     document.getElementById('aboutus-message').style.display = 'block';
+    document.getElementById('overlay-background').style.display = 'block';
     document.getElementById('aboutus-message').scrollTop = 0;
 }
 function aboutClose(){
     // function to close the about us
     document.getElementById('aboutus-message').style.display = 'none';
+    document.getElementById('overlay-background').style.display = 'none';
 }
 function rulesOpen(){
     // function to display the rules
     document.getElementById('rules-message').style.display = 'block';
+    document.getElementById('overlay-background').style.display = 'block';
     document.getElementById('rules-message').scrollTop = 0;
 }
 function rulesClose(){
     // function to close the rules
     document.getElementById('rules-message').style.display = 'none';
+    document.getElementById('overlay-background').style.display = 'none';
 }
 //Click listener for option rock
 document.getElementById("rock-button").addEventListener("click", function() {playGame('rock');});
