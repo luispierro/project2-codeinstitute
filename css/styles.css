@@ -295,9 +295,6 @@ ul, ol {
   list-style-position: inside; /* Optional: keep bullets inside if desired */
   text-align: left; /* Aligns content to the left */
 }
-li{
- 
-}
 /* Tablet */
 @media (min-width: 600px) {
     .history-title{
@@ -416,6 +413,161 @@ li{
     }
     .container{
       padding-bottom: 5rem; /* Space available between last element and footer */
+    }
+    #game1 {
+      background-color: #4e4e4e;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      align-items: center;
+      outline: 2px dashed black;
+    }
+    #game2 {
+      background-color: #4e4e4e;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      align-items: center;
+      outline: 2px dashed black;
+    }
+    #game3 {
+      background-color: #4e4e4e;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      align-items: center;
+      outline: 2px dashed black;
+    }
+    #result{
+      text-align: center;
+    }
+    #overlay-background {
+      position: fixed; /* Sticks to a specific position relative to the viewport */
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+    /* Overlapping end game message box style */
+    #overlay-message {
+      position: fixed; /* Sticks to a specific position relative to the viewport */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* Centers the message box */
+      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      display: none; /* Hidden by default */
+      z-index: 1000; /* Ensures the message overlaps other content */
+      width: 300px;
+    }
+    /* Overlapping about us box style */
+    #aboutus-message {
+      position: fixed; /* Sticks to a specific position relative to the viewport */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* Centers the message box */
+      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      display: none; /* Hidden by default */
+      z-index: 1000; /* Ensures the message overlaps other content */
+      width: 40vh;
+      max-height: 70vh;
+      overflow-y: auto;
+    }
+    /* Overlapping game rules box styling */
+    #rules-message {
+      position: fixed; /* Sticks to a specific position relative to the viewport */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* Centers the message box */
+      background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      display: none; /* Hidden by default */
+      z-index: 1000; /* Ensures the message overlaps other content */
+      width: 40vh;
+      max-height: 70vh;
+      overflow-y: auto;
+    }
+    button {
+      padding: 12px 25px;
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+      background: linear-gradient(45deg, #6a5acd, #8a2be2);
+      border: none;
+      border-radius: 30px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+    /* Button hover effect */
+    button:hover {
+      background: linear-gradient(45deg, #8a2be2, #6a5acd); /* Reverse gradient on hover */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+      transform: translateY(-3px); /* Slight lift effect */
+    }
+    /* Button active effect (when clicked) */
+    button:active {
+      transform: translateY(1px); /* Slight push down */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly reduce shadow */
+    }
+    #about-button {
+      background-color: #4e4e4e;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      align-items: center;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #about-button:hover {
+      background-color: #D3DDC8; /* Darker blue on hover */
+      transform: translateY(-3px); /* Slight lift effect */
+    }
+    #about-button:active {
+      background-color: #344C35; /* Even darker blue when clicked */
+      transform: translateY(1px); /* Slight press effect */
+    }
+    #about-button:focus {
+      outline: none;
+      box-shadow: 2px #4A6646; /* Blue focus outline */
+    }
+    #rules-button {
+      background-color: #4e4e4e;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      align-items: center;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #rules-button:hover {
+      background-color: #D3DDC8; /* Darker blue on hover */
+      transform: translateY(-3px); /* Slight lift effect */
+    }
+    #rules-button:active {
+      background-color: #344C35; /* Even darker blue when clicked */
+      transform: translateY(1px); /* Slight press effect */
+    }
+    #rules-button:focus {
+      outline: none;
+      box-shadow: 2px #4A6646; /* Blue focus outline */
+    }
+    ul, ol {
+      padding: 3px !important; /* Removes default indentation */
+      /*margin: 0 !important; /* Removes margin if needed */
+      list-style-position: inside; /* Optional: keep bullets inside if desired */
+      text-align: left; /* Aligns content to the left */
     }
 }
   /* Desktop and laptop */
