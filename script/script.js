@@ -1,3 +1,4 @@
+/* jshint esversion: 6 */
 //game control
 let game = 0;
 //game history
