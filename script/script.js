@@ -186,7 +186,16 @@ function playGame(option) {
       alert("No option selected");
     }
 }
-
+function aboutOpen(){
+    // function to display the about us
+    document.getElementById('aboutus-message').style.display = 'block';
+    document.getElementById('aboutus-message').scrollTop = 0;
+}
+function aboutClose(){
+    // function to close the about us
+    document.getElementById('aboutus-message').style.display = 'none';
+    
+}
 //Click listener for option rock
 document.getElementById("rock-button").addEventListener("click", function() {playGame('rock');});
 //Click listener for option paper
@@ -197,3 +206,5 @@ document.getElementById("scissor-button").addEventListener("click", function() {
 document.getElementById("lizard-button").addEventListener("click", function() {playGame('lizard');});
 //Click listener for option spock
 document.getElementById("spock-button").addEventListener("click", function() {playGame('spock');});
+//Click listener for the about us button
+document.getElementById("about-button").addEventListener("click", function() {aboutOpen();});

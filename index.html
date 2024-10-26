@@ -17,13 +17,48 @@
             <div class="row">
                 <div class="col-12 col-md-4 col-lg-8">
                     <div class="row pt-5">
-                        <div class="col-12 col-md-4 col-lg-8 d-flex justify-content-center align-items-center">
-                            <h3>Fun Games Today!</h3><br><img src="assets/joystick/favicon-32x32.png">
+                        <div class="col-2 col-md-4 col-lg-8"></div>
+                        <div class="col-7 col-md-4 col-lg-8 d-flex justify-content-center align-items-center">
+                            <h3>Fun Games Today!</h3>
+                        </div>
+                        <div class="col-1 col-md-4 col-lg-8">
+                            <img src="assets/joystick/favicon-32x32.png" alt="icon of a video game joystick">
                         </div>
                     </div>
-                    <div class="row pt-5">
-                        <!-- Overlapping message box -->
+                    <div class="row">
+                        <!-- Overlapping end game message box -->
                          <div id="overlay-message"><br><br>
+                        </div>
+                        <!-- Overlapping about us box -->
+                        <div id="aboutus-message">
+                            <p>
+                                Founded in the wild year of 2024, Fun Games Today! started as a scrappy bunch of friends with too much coffee, too little sleep, and one outrageous belief: that their games would someday be as addictive as their caffeine habits. The team is small, quirky, and dangerously obsessed with breaking gaming rules (because who even follows rules in games, right?). They began in a cramped apartment where their “office chairs” were thrift store beanbags, and their “meeting room” was just any corner that wasn’t already covered in pizza boxes.
+                            </p>
+                            <p>
+                                Their first attempt at a game was supposed to be a “simple, classic” puzzle game… until they decided puzzles were boring and that adding exploding llamas, a talking cactus, and randomly generated dance parties would make it way better. Did it work? Technically, yes — if you ask their moms.
+                            </p>
+                            <p>
+                                From there, Fun Games Today! committed themselves to creating games that entertain by surprising players with the unexpected. They ditched the mainstream, aiming instead to hit the sweet spot where “this makes no sense” and “I can’t stop playing” intersect. If you think a game’s plot should make sense, or that every level should be passable… this is not the studio for you. They aim to make games as hilariously chaotic as a toddler hopped up on candy. 
+                            </p>
+                            <p>
+                                Today, they’re pushing boundaries from a slightly larger (but still pizza-laden) “office” and still breaking out the beanbags when inspiration hits. They’re a mix of oddballs and geniuses, coding, designing, and testing games with the main goal to make you laugh, scratch your head, and lose track of what day it is.
+Play our games if you’re ready to embrace the absurd and enjoy a laugh along the way. After all, at Fun Games Today!, we don’t just make games — we create memorable chaos.
+                            </p>
+                            <button onclick="aboutClose()">Ok. Shared too much!</button>
+                        </div>
+                        <!-- Overlapping game rules box -->
+                        <div id="rules-message"><br><br>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center pt-3">
+                        <!-- button to about us -->
+                        <div class="col-auto d-flex justify-content-center align-items-center" id="about-button">
+                            <img src="assets/question/favicon-16x16.png" alt="icon of a question mark to about us">
+                        </div>
+                        <div class="col-auto"></div>
+                        <!-- button to game rules -->
+                        <div class="col-auto d-flex justify-content-center align-items-center" id="rules-button">
+                            <img src="assets/book/favicon-16x16.png" alt="icon of a book to the games rules">
                         </div>
                     </div>
                     <div class="row justify-content-center pt-5">
