@@ -210,6 +210,8 @@ footer p{
   display: none; /* Hidden by default */
   z-index: 1000; /* Ensures the message overlaps other content */
   width: 300px;
+  max-height: 70vh;
+  overflow-y: auto;
 }
 button {
   padding: 12px 25px;
@@ -274,6 +276,15 @@ button:active {
 #rules-button:focus {
   outline: none;
   box-shadow: 2px #4A6646; /* Blue focus outline */
+}
+ul, ol {
+  padding: 3px !important; /* Removes default indentation */
+  /*margin: 0 !important; /* Removes margin if needed */
+  list-style-position: inside; /* Optional: keep bullets inside if desired */
+  text-align: left; /* Aligns content to the left */
+}
+li{
+ 
 }
 /* Tablet */
 @media (min-width: 600px) {

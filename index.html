@@ -47,7 +47,106 @@ Play our games if you’re ready to embrace the absurd and enjoy a laugh along t
                             <button onclick="aboutClose()">Ok. Shared too much!</button>
                         </div>
                         <!-- Overlapping game rules box -->
-                        <div id="rules-message"><br><br>
+                        <div id="rules-message">
+                            <h3>The Rules:</h3>
+                            <p>Each gesture can defeat two others and be defeated by two others. Here's how it works:</p>
+                            <ol>
+                                <li>
+                                    <strong>Rock:</strong>
+                                    <ul>
+                                        <li>
+                                            Crushes Scissors;
+                                        </li>
+                                        <li>
+                                            Crushes Lizard;
+                                        </li>
+                                        <li>
+                                            Paper covers Rock;
+                                        </li>
+                                        <li>
+                                            Spock vaporizes Rock;
+                                        </li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Paper:</strong>
+                                    <ul>
+                                        <li>
+                                            Covers Rock;
+                                        </li>
+                                        <li>
+                                            Disproves Spock;
+                                        </li>
+                                        <li>
+                                            Scissors cut Paper;
+                                        </li>
+                                        <li>
+                                            Lizard eats Paper;
+                                        </li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Scissor:</strong>
+                                    <ul>
+                                        <li>
+                                            Cuts Paper;
+                                        </li>
+                                        <li>
+                                            Decapitates Lizard;
+                                        </li>
+                                        <li>
+                                            Rock crushes Scissors;
+                                        </li>
+                                        <li>
+                                            Spock smashes Scissors;
+                                        </li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Lizard:</strong>
+                                    <ul>
+                                        <li>
+                                            Eats Paper;
+                                        </li>
+                                        <li>
+                                            Poisons Spock;
+                                        </li>
+                                        <li>
+                                            Rock crushes Lizard;
+                                        </li>
+                                        <li>
+                                            Scissors decapitate Lizard;
+                                        </li>
+                                    </ul>
+                                </li><br>
+                                <li>
+                                    <strong>Spock:</strong>
+                                    <ul>
+                                        <li>
+                                            Vaporizes Rock;
+                                        </li>
+                                        <li>
+                                            Smashes Scissors;
+                                        </li>
+                                        <li>
+                                            Paper disproves Spock;
+                                        </li>
+                                        <li>
+                                            Lizard poisons Spock;
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            <h5>Game Flow:</h5>
+                            <ol>
+                                <li>A match is composed of 3 games sets;</li><br>
+                                <li>Each game set, the player chooses one of the five options: Rock, Paper, Scissors, Lizard, or Spock;</li><br>
+                                <li>Player and Computer reveal their choices at the same time;</li><br>
+                                <li>The winner of the game set is determined based on the above interactions. If both players choose the same option, it's a tie;</li><br>
+                                <li>The match is based on the best of 3: So each game win is added 1; game loss is subtracted 1 point; and a tie adds no points;</li><br>
+                                <li>After the 3 game sets, the player is considered a "Match Winner" if player has 1 point or more; "Match Looser" if player has negative points; and a "Tie" if the player has 0 poinits. </li>
+                            </ol>
+                            <button onclick="rulesClose()">Got it!</button>
                         </div>
                     </div>
                     <div class="row justify-content-center pt-3">
