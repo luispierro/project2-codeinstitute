@@ -618,6 +618,7 @@ ul, ol {
       padding: 2px 4px;
       transition: background-color 0.3s ease, transform 0.3s ease;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      height: 75px;
     }
     .rock-button:hover {
       background-color: #D3DDC8; /* Darker blue on hover */
@@ -638,6 +639,7 @@ ul, ol {
       padding: 2px 4px;
       transition: background-color 0.3s ease, transform 0.3s ease;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      height: 75px;
     }
     .paper-button:hover {
       background-color: #D3DDC8; /* Darker blue on hover */
@@ -658,6 +660,7 @@ ul, ol {
       padding: 2px 4px;
       transition: background-color 0.3s ease, transform 0.3s ease;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      height: 75px;
     }
     .scissor-button:hover {
       background-color: #D3DDC8; /* Darker blue on hover */
@@ -678,6 +681,7 @@ ul, ol {
       padding: 2px 4px;
       transition: background-color 0.3s ease, transform 0.3s ease;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      height: 75px;
     }
     .lizard-button:hover {
       background-color: #D3DDC8; /* Darker blue on hover */
@@ -698,6 +702,7 @@ ul, ol {
       padding: 2px 4px;
       transition: background-color 0.3s ease, transform 0.3s ease;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      height: 75px;
     }
     .spock-button:hover {
       background-color: #D3DDC8; /* Darker blue on hover */
