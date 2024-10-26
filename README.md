@@ -7,8 +7,11 @@ Fun Games Today is a playful and quirky website where players dive into the ulti
 
 ### Wireframes
 
-<summary>Desktop</summary>
-<description>![desktop](assets/wireframe-desktop.jpg)</description>
+#### Desktop
+![desktop](assets/wireframe-desktop.jpg)
+
+#### Smartphones
+!![smartphone](assets/wireframe-smartphone.jpg)
 
 ### Screens
 
