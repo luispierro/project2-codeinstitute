@@ -7,118 +7,39 @@
   background-color: #556B2F;
   border-radius: 10%;
   text-align: center;
+  height: 75px;
 }
 .your-loss{
   /*design for boxes of history loss games */
   background-color: #a0312d;
   border-radius: 10%;
   text-align: center;
+  height: 75px;
 }
 .game-ties{
   /*design for boxes of history tie games */
   background-color: #727272;
   border-radius: 10%;
   text-align: center;
+  height: 75px;
 }
-.rock-button {
+.choice-button {
   position: relative;
   border-radius: 50%;
+  background-color: #C0C0C0;
   width: 30px; 
   padding: 2px 4px;
   transition: background-color 0.3s ease, transform 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 75px;
 }
-.rock-button:hover {
-  background-color: #D3DDC8; /* Darker blue on hover */
-  transform: translateY(-3px); /* Slight lift effect */
-}
-.rock-button:active {
-  background-color: #344C35; /* Even darker blue when clicked */
+.choice-button:active {
+  background-color: #808080; /* Dim Gray */
   transform: translateY(1px); /* Slight press effect */
 }
-.rock-button:focus {
+.choice-button:focus {
   outline: none;
-  box-shadow: 2px #4A6646; /* Blue focus outline */
-}
-.paper-button {
-  position: relative;
-  border-radius: 50%;
-  cursor: pointer; 
-  padding: 2px 4px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.paper-button:hover {
-  background-color: #D3DDC8; /* Darker blue on hover */
-  transform: translateY(-3px); /* Slight lift effect */
-}
-.paper-button:active {
-  background-color: #344C35; /* Even darker blue when clicked */
-  transform: translateY(1px); /* Slight press effect */
-}
-.paper-button:focus {
-  outline: none;
-  box-shadow: 2px #4A6646; /* Blue focus outline */
-}
-.scissor-button {
-  position: relative;
-  border-radius: 50%;
-  cursor: pointer; 
-  padding: 2px 4px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.scissor-button:hover {
-  background-color: #D3DDC8; /* Darker blue on hover */
-  transform: translateY(-3px); /* Slight lift effect */
-}
-.scissor-button:active {
-  background-color: #344C35; /* Even darker blue when clicked */
-  transform: translateY(1px); /* Slight press effect */
-}
-.scissor-button:focus {
-  outline: none;
-  box-shadow: 2px #4A6646; /* Blue focus outline */
-}
-.lizard-button {
-  position: relative;
-  border-radius: 50%;
-  cursor: pointer; 
-  padding: 2px 4px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.lizard-button:hover {
-  background-color: #D3DDC8; /* Darker blue on hover */
-  transform: translateY(-3px); /* Slight lift effect */
-}
-.lizard-button:active {
-  background-color: #344C35; /* Even darker blue when clicked */
-  transform: translateY(1px); /* Slight press effect */
-}
-.lizard-button:focus {
-  outline: none;
-  box-shadow: 2px #4A6646; /* Blue focus outline */
-}
-.spock-button {
-  position: relative;
-  border-radius: 50%;
-  cursor: pointer; 
-  padding: 2px 4px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.spock-button:hover {
-  background-color: #D3DDC8; /* Darker blue on hover */
-  transform: translateY(-3px); /* Slight lift effect */
-}
-.spock-button:active {
-  background-color: #344C35; /* Even darker blue when clicked */
-  transform: translateY(1px); /* Slight press effect */
-}
-.spock-button:focus {
-  outline: none;
-  box-shadow: 2px #4A6646; /* Blue focus outline */
+  box-shadow: 2px #B0C4DE;
 }
 footer{
   background-color: #4e4e4e;
@@ -146,6 +67,7 @@ footer p{
   padding-bottom: 10px;
   align-items: center;
   outline: 2px dashed black;
+  height: 50px;
 }
 #game2 {
   background-color: #4e4e4e;
@@ -153,6 +75,7 @@ footer p{
   padding-bottom: 10px;
   align-items: center;
   outline: 2px dashed black;
+  height: 50px;
 }
 #game3 {
   background-color: #4e4e4e;
@@ -160,6 +83,7 @@ footer p{
   padding-bottom: 10px;
   align-items: center;
   outline: 2px dashed black;
+  height: 50px;
 }
 #result{
   text-align: center;
@@ -317,112 +241,37 @@ ul, ol {
       background-color: #556B2F;
       border-radius: 10%;
       text-align: center;
+      height: 75px;
     }
     .your-loss{
       /*design for boxes of history loss games */
       background-color: #a0312d;
       border-radius: 10%;
       text-align: center;
+      height: 75px;
     }
     .game-ties{
       /*design for boxes of history tie games */
       background-color: #727272;
       border-radius: 10%;
       text-align: center;
+      height: 75px;
     }
-    .rock-button {
+    .choice-button {
       position: relative;
+      background-color: #C0C0C0;
       padding: 2px 4px;
       transition: background-color 0.3s ease, transform 0.3s ease;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      height: 70px;
     }
-    .rock-button:hover {
-      background-color: #D3DDC8; /* Darker blue on hover */
-      transform: translateY(-3px); /* Slight lift effect */
-    }
-    .rock-button:active {
-      background-color: #344C35; /* Even darker blue when clicked */
+    .choice-button:active {
+      background-color: #808080; /* Dim Gray */
       transform: translateY(1px); /* Slight press effect */
     }
-    .rock-button:focus {
+    .choice-button:focus {
       outline: none;
-      box-shadow: 2px #4A6646; /* Blue focus outline */
-    }
-    .paper-button {
-      position: relative;
-      cursor: pointer; 
-      padding: 2px 4px;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .paper-button:hover {
-      background-color: #D3DDC8; /* Darker blue on hover */
-      transform: translateY(-3px); /* Slight lift effect */
-    }
-    .paper-button:active {
-      background-color: #344C35; /* Even darker blue when clicked */
-      transform: translateY(1px); /* Slight press effect */
-    }
-    .paper-button:focus {
-      outline: none;
-      box-shadow: 2px #4A6646; /* Blue focus outline */
-    }
-    .scissor-button {
-      position: relative;
-      cursor: pointer; 
-      padding: 2px 4px;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .scissor-button:hover {
-      background-color: #D3DDC8; /* Darker blue on hover */
-      transform: translateY(-3px); /* Slight lift effect */
-    }
-    .scissor-button:active {
-      background-color: #344C35; /* Even darker blue when clicked */
-      transform: translateY(1px); /* Slight press effect */
-    }
-    .scissor-button:focus {
-      outline: none;
-      box-shadow: 2px #4A6646; /* Blue focus outline */
-    }
-    .lizard-button {
-      position: relative;
-      cursor: pointer; 
-      padding: 2px 4px;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .lizard-button:hover {
-      background-color: #D3DDC8; /* Darker blue on hover */
-      transform: translateY(-3px); /* Slight lift effect */
-    }
-    .lizard-button:active {
-      background-color: #344C35; /* Even darker blue when clicked */
-      transform: translateY(1px); /* Slight press effect */
-    }
-    .lizard-button:focus {
-      outline: none;
-      box-shadow: 2px #4A6646; /* Blue focus outline */
-    }
-    .spock-button {
-      position: relative;
-      cursor: pointer; 
-      padding: 2px 4px;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    .spock-button:hover {
-      background-color: #D3DDC8; /* Darker blue on hover */
-      transform: translateY(-3px); /* Slight lift effect */
-    }
-    .spock-button:active {
-      background-color: #344C35; /* Even darker blue when clicked */
-      transform: translateY(1px); /* Slight press effect */
-    }
-    .spock-button:focus {
-      outline: none;
-      box-shadow: 2px #4A6646; /* Blue focus outline */
+      box-shadow: 2px #B0C4DE;
     }
     footer{
       background-color: #4e4e4e;
@@ -450,6 +299,7 @@ ul, ol {
       padding-bottom: 10px;
       align-items: center;
       outline: 2px dashed black;
+      height: 50px;
     }
     #game2 {
       background-color: #4e4e4e;
@@ -457,6 +307,7 @@ ul, ol {
       padding-bottom: 10px;
       align-items: center;
       outline: 2px dashed black;
+      height: 50px;
     }
     #game3 {
       background-color: #4e4e4e;
@@ -464,6 +315,7 @@ ul, ol {
       padding-bottom: 10px;
       align-items: center;
       outline: 2px dashed black;
+      height: 50px;
     }
     #result{
       text-align: center;
@@ -635,110 +487,27 @@ ul, ol {
       text-align: center;
       height: 75px;
     }
-    .rock-button {
+    .choice-button {
       position: relative;
       border-radius: 50%;
+      background-color: #C0C0C0;
       cursor: pointer; 
       padding: 2px 4px;
       transition: background-color 0.3s ease, transform 0.3s ease;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       height: 75px;
     }
-    .rock-button:hover {
-      background-color: #D3DDC8; /* Darker blue on hover */
+    .choice-button:hover {
+      background-color: #A9A9A9; /* Dark Gray */
       transform: translateY(-3px); /* Slight lift effect */
     }
-    .rock-button:active {
-      background-color: #344C35; /* Even darker blue when clicked */
+    .choice-button:active {
+      background-color: #808080; /* Dim Gray */
       transform: translateY(1px); /* Slight press effect */
     }
-    .rock-button:focus {
+    .choice-button:focus {
       outline: none;
-      box-shadow: 2px #4A6646; /* Blue focus outline */
-    }
-    .paper-button {
-      position: relative;
-      border-radius: 50%;
-      cursor: pointer; 
-      padding: 2px 4px;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      height: 75px;
-    }
-    .paper-button:hover {
-      background-color: #D3DDC8; /* Darker blue on hover */
-      transform: translateY(-3px); /* Slight lift effect */
-    }
-    .paper-button:active {
-      background-color: #344C35; /* Even darker blue when clicked */
-      transform: translateY(1px); /* Slight press effect */
-    }
-    .paper-button:focus {
-      outline: none;
-      box-shadow: 2px #4A6646; /* Blue focus outline */
-    }
-    .scissor-button {
-      position: relative;
-      border-radius: 50%;
-      cursor: pointer; 
-      padding: 2px 4px;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      height: 75px;
-    }
-    .scissor-button:hover {
-      background-color: #D3DDC8; /* Darker blue on hover */
-      transform: translateY(-3px); /* Slight lift effect */
-    }
-    .scissor-button:active {
-      background-color: #344C35; /* Even darker blue when clicked */
-      transform: translateY(1px); /* Slight press effect */
-    }
-    .scissor-button:focus {
-      outline: none;
-      box-shadow: 2px #4A6646; /* Blue focus outline */
-    }
-    .lizard-button {
-      position: relative;
-      border-radius: 50%;
-      cursor: pointer; 
-      padding: 2px 4px;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      height: 75px;
-    }
-    .lizard-button:hover {
-      background-color: #D3DDC8; /* Darker blue on hover */
-      transform: translateY(-3px); /* Slight lift effect */
-    }
-    .lizard-button:active {
-      background-color: #344C35; /* Even darker blue when clicked */
-      transform: translateY(1px); /* Slight press effect */
-    }
-    .lizard-button:focus {
-      outline: none;
-      box-shadow: 2px #4A6646; /* Blue focus outline */
-    }
-    .spock-button {
-      position: relative;
-      border-radius: 50%;
-      cursor: pointer; 
-      padding: 2px 4px;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      height: 75px;
-    }
-    .spock-button:hover {
-      background-color: #D3DDC8; /* Darker blue on hover */
-      transform: translateY(-3px); /* Slight lift effect */
-    }
-    .spock-button:active {
-      background-color: #344C35; /* Even darker blue when clicked */
-      transform: translateY(1px); /* Slight press effect */
-    }
-    .spock-button:focus {
-      outline: none;
-      box-shadow: 2px #4A6646; /* Blue focus outline */
+      box-shadow: 2px #B0C4DE;
     }
     footer{
       background-color: #4e4e4e;
