@@ -186,6 +186,35 @@ function playGame(option) {
       alert("No option selected");
     }
 }
+function showTooltip(event, message) {
+    // Check if a tooltip already exists
+    let tooltip = document.querySelector('.tooltip');
+    if (!tooltip) {
+        tooltip = document.createElement('div');
+        tooltip.className = 'tooltip';
+        document.body.appendChild(tooltip);
+    }
+    // Set the tooltip message and make it visible
+    tooltip.textContent = message;
+    tooltip.style.opacity = '1'; // Show the tooltip
+
+    // Position the tooltip initially
+    positionTooltip(event, tooltip);
+}
+
+// Function to position tooltip near cursor
+function positionTooltip(event, tooltip) {
+    tooltip.style.left = event.pageX + 10 + 'px'; // Offset slightly
+    tooltip.style.top = event.pageY + 10 + 'px';
+}
+// Function to hide tooltip
+function hideTooltip() {
+const tooltip = document.querySelector('.tooltip');
+if (tooltip) {
+    tooltip.style.opacity = '0'; // Hide the tooltip
+    setTimeout(() => tooltip.remove(), 200); // Remove tooltip after transition
+}
+}
 function aboutOpen(){
     // function to display the about us
     document.getElementById('aboutus-message').style.display = 'block';
