@@ -61,23 +61,7 @@ footer p{
 .container{
   padding-bottom: 5rem; /* Space available between last element and footer */
 }
-#game1 {
-  background-color: #4e4e4e;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  align-items: center;
-  outline: 2px dashed black;
-  height: 50px;
-}
-#game2 {
-  background-color: #4e4e4e;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  align-items: center;
-  outline: 2px dashed black;
-  height: 50px;
-}
-#game3 {
+.game-result {
   background-color: #4e4e4e;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -293,23 +277,7 @@ ul, ol {
     .container{
       padding-bottom: 5rem; /* Space available between last element and footer */
     }
-    #game1 {
-      background-color: #4e4e4e;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      align-items: center;
-      outline: 2px dashed black;
-      height: 50px;
-    }
-    #game2 {
-      background-color: #4e4e4e;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      align-items: center;
-      outline: 2px dashed black;
-      height: 50px;
-    }
-    #game3 {
+    .game-result {
       background-color: #4e4e4e;
       padding-top: 10px;
       padding-bottom: 10px;
