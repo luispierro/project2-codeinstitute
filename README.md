@@ -20,7 +20,7 @@ Our Website on Desktops
 
 - __Game Help__
 
-- Modern overlay display the rules of the game. It has a simple and easy description for the better understanding of the game. The players can acess it at any time, without distourbing the game or having to leave the page.
+- This modern overlay provides a clear, concise description of the game rules, designed for easy understanding at a glance. Players can access it anytime during gameplay without disrupting their experience or needing to leave the page. The overlay blends seamlessly with the interface, ensuring that essential information is always just a click away, helping players stay focused and informed as they play.
 
 ![game-help](assets/game-rules.png)
 
@@ -80,6 +80,10 @@ No major bugs left to be fixed.
 The live link can be found here - https://luispierro.github.io/project2-codeinstitute/
 
 ## Credits
+
+### Style Libraries
+
+- The functional grids from Bootstrap were used to leverage market trends and improve the website's responsiveness. [BootStrap](https://getbootstrap.com/docs/5.3/layout/grid/)
 
 ### Content 
 
